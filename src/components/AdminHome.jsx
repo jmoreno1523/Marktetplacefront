@@ -13,7 +13,7 @@ export default function AdminHome(){
 
     const actualizarEstado = async (compraId, nuevoEstado) => {
         try {
-            const response = await fetch('http://localhost:4000/pay/actualizarEstado', {
+            const response = await fetch('https://marketplace-back-flame.vercel.app/pay/actualizarEstado', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ export default function AdminHome(){
 
     const fetchCompras = async () => {
         try {
-            const response = await fetch("http://localhost:4000/pay/getTodasCompras", {
+            const response = await fetch("https://marketplace-back-flame.vercel.app/pay/getTodasCompras", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",

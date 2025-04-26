@@ -5,7 +5,7 @@ const Estadisticas = () => {
     const [stats, setStats] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:4000/pay/estadisticas')
+        fetch('https://marketplace-back-flame.vercel.app/pay/estadisticas')
             .then((res) => res.json())
             .then((data) => setStats(data));
     }, []);
